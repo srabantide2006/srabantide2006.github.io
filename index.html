@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The.Srabanti</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./pure-heart.js" defer></script>
+  </head>
+  <body>
+    <div id="heart" data-count="400"></div>
+    <div class="content-box">
+      <img class="avatar" src="the.srabanti.jpg">
+      <audio id="myMusic" src="bg.mp3" loop=""></audio>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".avatar").on('click', function(){
+          $("#myMusic")[0].play();
+        });
+      });
+    </script>
+  </body>
+</html>
